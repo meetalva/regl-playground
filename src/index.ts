@@ -18,3 +18,4 @@ export * from './radio';
 export * from './section';
 export * from './space';
 export * from './teaser';
+export * from './animation'

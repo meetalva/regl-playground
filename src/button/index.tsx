@@ -19,12 +19,13 @@ export interface ButtonProps {
 
 export enum ButtonOrder {
 	Primary,
-	Secondary
+	Secondary,
+	Third
 }
 
 const StyledButton = styled.div`
 	padding: 12px 20px;
-	min-width: 200px;
+	min-width: 300px;
 	font-size: 18px;
 	font-family: ${fonts().NORMAL_FONT};
 	border-radius: 3px;
@@ -50,6 +51,11 @@ const StyledButton = styled.div`
 						background-color: ${Color.Grey70};
 					}
 				`;
+			case ButtonOrder.Third:
+				return css`
+					box-shadow: inset 0 0 5px #f0f;
+				
+				`
 			case ButtonOrder.Secondary:
 			default:
 				return css`
